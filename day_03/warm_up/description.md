@@ -30,6 +30,7 @@ This challenge combines several Python concepts you have been learning:
      - 50% chance: lose 2 energy
      - 30% chance: nothing happens
      - 20% chance: find food, gain 3 energy
+ 
 
 2. **Rest**
    - Stay in place and regain **2 energy**.

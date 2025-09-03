@@ -125,9 +125,10 @@ for key, value in me.items():
 # Example: a list of 3 friends, where each friend has a name and favorite food.
 
 Friends = [
-    {"name": "Alice", "favorite_food": "pizza", age: 25},
-    {"name": "Bob", "favorite_food": "sushi", age: 30},
-    {"name": "Charlie", "favorite_food": "ice cream", age: 15}
+    {"name": "Alice", "favorite_food": "pizza", "age": "25"},
+    {"name": "Bob", "favorite_food": "sushi", "age": "30"},
+    {"name": "Charlie", "favorite_food": "ice cream", "age": "15"} 
+          ]
 
 # TODO: Print the favorite food of the second friend.
 print(Friends[2]["favorite_food"])
@@ -145,7 +146,12 @@ for friend in Friends:
 # --- Section 8: Reflection ---
 # Answer in comments:
 # 1. How is a list different from a dictionary?
+# 1A: A list is an ordered collection of items that can be accessed by their index, while a dictionary is an unordered collection of key-value pairs that can be accessed by their keys.
 # 2. When would you want to use a dictionary instead of a list?
+# 2A: When you want to store data that has a specific label or identifier, such as a person's name or an item's ID.
 # 3. Can you think of a real-world situation where combining lists and dictionaries would be useful?
+# 3A: Contact management system, where each contact is represented as a dictionary with keys for name, phone number, email, etc., and all contacts are stored in a list.
 # 4. What types of mistakes gave you the most errors today?
+# 4A: I was forgetting to close any type of parentheses and brackets.
 # 5. How might noticing errors actually help you learn?
+# 5A: Noticing errors helps me learn by forcing me to think critically about what went wrong and how to fix it, which reinforces my understanding of the concepts and syntax.
