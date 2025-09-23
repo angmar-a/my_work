@@ -17,7 +17,7 @@ def load_quotes(filename = "quotes.txt"):
 # Function takes in list of strings and randomly chooses one to return
 def get_random_quote(filename = "quotes.txt"):
     quotes = load_quotes(filename)
-    print( random.choice(quotes))
+    print(random.choice(quotes))
 
 
 # Runs program. Main() is the only function called so that it calls the other functions appropriately and controls logic flow.
