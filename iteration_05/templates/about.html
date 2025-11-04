@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+    <div id="name">{{name}}</div>
+    <p> I am a 12th grade studentseverything is interesting in technologies</p>
+    <p id="phone">
+        {% if is_student%}
+            I am a student 
+         {% else %} 
+            I am not a student
+         {% endif %} 
+    </p>
+{% endblock %}
