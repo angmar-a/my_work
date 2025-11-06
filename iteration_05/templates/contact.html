@@ -1,18 +1,29 @@
-
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% block title %}Contact{% endblock %}
 
 {% block content %}
+<h1 class="text-3xl font-bold text-green-900 mb-6 text-center">Contact Information</h1>
 
-    <p id="email">My email is: {{contact.email}}</p>
-    <dl id="github"> My github is: {{contact.github}}</dl>
-    <p id="phone">
-        {% if phone is none  %}
-         No phone provided 
-         {% else %} 
-         Phone number: {{contact.phone}} 
-         {% endif %} 
+<div class="flex flex-wrap justify-around items-center gap-8 bg-green-100 p-8 rounded-lg shadow">
+
+    <p id="email" class="text-lg text-green-800">
+        My email: {{ contact.email }}
     </p>
+
+    <dl id="github" class="text-lg text-green-800">
+        GitHub: {{ contact.github }}
+    </dl>
+
+    <p id="phone" class="text-lg text-green-800">
+        {% if contact.phone is none %}
+            No phone provided
+        {% else %}
+            Phone: {{ contact.phone }}
+        {% endif %}
+    </p>
+
+</div>
 {% endblock %}
+
 
 

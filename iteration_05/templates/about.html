@@ -3,8 +3,9 @@
 {% block title %}About{% endblock %}
 
 {% block content %}
+<div class = "flex flex-col items-center justify-center bg-green-100 justify-around p-8 rounded-lg shadow">
     <div id="name">{{name}}</div>
-    <p> I am a 12th grade studentseverything is interesting in technologies</p>
+    <p> I am a 12th grade students, everything is interesting in technologies</p>
     <p id="phone">
         {% if is_student%}
             I am a student 
@@ -12,4 +13,5 @@
             I am not a student
          {% endif %} 
     </p>
+</div>
 {% endblock %}
